@@ -1,16 +1,6 @@
-@import url("https://fonts.googleapis.com/css2?family=Playfair+Display&family=Poppins:wght@200;400;700&display=swap");
-
-body {
-	margin: 0;
-	height: 100vh;
-	font-family: "Poppins";
-}
 .wrapper {
 	overflow-x: hidden;
 	position: relative;
-}
-* {
-	box-sizing: border-box;
 }
 svg {
 	position: absolute;
