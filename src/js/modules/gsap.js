@@ -3,8 +3,8 @@ import { ScrollTrigger } from "gsap/ScrollTrigger.js";
 
 export function init() {
 	gsap.registerPlugin(ScrollTrigger);
-	const container = document.querySelector(".container");
-	const sections = gsap.utils.toArray(".container section");
+	const container = document.querySelector(".main-container");
+	const sections = gsap.utils.toArray(".main-container section");
 	const texts = gsap.utils.toArray(".anim");
 	const mask = document.querySelector(".mask");
 
@@ -12,7 +12,7 @@ export function init() {
 		xPercent: -100 * (sections.length - 1),
 		ease: "none",
 		scrollTrigger: {
-			trigger: ".container",
+			trigger: ".main-container",
 			pin: true,
 			scrub: 1,
 			end: "+=2000",
